@@ -1,28 +1,135 @@
+<!DOCTYPE html>
 <html>
 <head>
 <style>
-.parallax {
-    /* The image used */
-    background-image: url("imageedit_68_7258641581.jpg");
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
 
-    /* Set a specific height */
-    min-height: 725px; 
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* first page background */
+.bgimg-1 {
+  background-image: url("white.jpg");
+  min-height: 100%;
+}
+
+/* statistic background */
+.bgimg-2 {
+  background-image: url("honeycomb.png");
+  min-height: 400px;
+}
+
+/* why background */
+.bgimg-3 {
+  background-image: url("combhoney.jpg");
+  min-height: 400px;
+}
+
+/* donate now background */
+.bgimg-4 {
+  background-image: url("white.jpg");
+  min-height: 400px;
+}
+
+/* resource background */
+.bgimg-5 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+/* who are we background */
+.bgimg-6 {
+  background-image: url("honeycombbee.jpg");
+  min-height: 400px;
+}
+
+.bgimg-7 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: lowercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+.pstat{
+  text-align: right;
+
+}
+
+.pdonate{
+  text-align: center;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
 </style>
 </head>
 <body>
 
-<div class="parallax"></div>
+<div class="bgimg-1">
+    <h3> buzz buzz. </h3>
+</div>
 
-<div style="height:1000px;background-color:Gold;font-size:36px">
+<div class="bgimg-2">
+    <h2> 93% </h2>
+    <p class = "pstat"> Of bees die from your mom everyday<p>
+</div>
+
+<div class="bgimg-3">
+  <h3 style="text-align:center;">Why Bees?</h3>
+  <p>Bees drink flowers and poo honey. You need honey. Without honey you lose blood. THen you die. And that sucks. Don't die. Save bees.</p>
+</div>
+
+<div style="position:relative;">
+  <div class="bgimg-4">
+    <p class = "pdonate">Donate Now.</p>
+  </div>
+</div>
+
+<div class="bgimg-5">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Resources</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <<div class="bgimg-6">
+    <p>Who are we?</p>
+  </div>
+</div>
+
+<div class="bgimg-7">
+  <div class="caption">
+    <span class="border">COOL!</span>
+  </div>
 </div>
 
 </body>
 </html>
-
