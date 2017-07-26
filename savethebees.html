@@ -1,28 +1,167 @@
+<!DOCTYPE html>
 <html>
 <head>
 <style>
-.parallax {
-    /* The image used */
-    background-image: url("imageedit_68_7258641581.jpg");
-
-    /* Set a specific height */
-    min-height: 725px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #777;
 }
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* first page background */
+.bgimg-1 {
+  background-image: url("white.jpg");
+  min-height: 100%;
+}
+
+/* statistic background */
+.bgimg-2 {
+  background-image: url("honeycomb.png");
+  min-height: 100%;
+}
+
+/* why background */
+.bgimg-3 {
+  background-image: url("combhoney.jpg");
+  min-height: 100%;
+}
+
+/* donate now background */
+.bgimg-4 {
+  background-image: url("white.jpg");
+  min-height: 100%;
+}
+
+/* resource background */
+.bgimg-5 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 100%;
+}
+
+/* who are we background */
+.bgimg-6 {
+  background-image: url("honeycombbee.jpg");
+  min-height: 100%;
+}
+
+.bgimg-7 {
+  background-image: url("white.jpg");
+  min-height: 100%;
+}
+
+
+h2 {
+  text-align: left;
+  font-size: 300px;
+  color: white;
+
+}
+
+h1 {
+  letter-spacing: 5px;
+  text-transform: lowercase;
+  color: #111;
+  text-align: center;
+  font-size: 200px;
+  text-decoration: none;
+}
+
+.pstat{
+  text-align: right;
+  font-size: 80px;
+
+}
+
+.pwhy {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+html{ height: 100%; }
+
+/* Position the element and psuedo on top of each other and centers on screen */
+h1, h1::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: table;
+  margin: auto;
+  width: 100%;
+}
+
+h1 {
+  z-index: 1;
+  color: #000000;
+  text-align: center;
+  font-size: 180px;
+  font-family: "Sacramento", cursive;
+  letter-spacing: -1px;
+}
+
+/* Set the psuedoelement beneath parent */
+h1::after {
+  z-index: -1;
+  content: attr(data-content);
+}
+
 </style>
+
 </head>
+
 <body>
 
-<div class="parallax"></div>
-
-<div style="height:1000px;background-color:Gold;font-size:36px">
+<div class="bgimg-1">
+  <br><br><br><br><br><br><br><br><br><br>
+  <h1 data-content="bubblegum">buzz buzz.</h1>
 </div>
+
+<div class="bgimg-2">
+    <h2> 33% </h2>
+    <p class = "pstat" style = "color: #000000;"> Of bees colonies <br>
+      were lost in 2017</p>
+      <br>
+      <p class = "pstat" style = "color: white;"> so far. </p>
+</div>
+
+<div class="bgimg-3">
+  <br> <br> <br> <br>
+  <h3 style="text-align:center;">Why Bees?</h3>
+  <p class = "pwhy">Bees drink flowers and poo honey. You need honey. Without honey you lose blood.
+    THen you die. And that sucks. Don't die. Save bees. bbafldksjfa;ljdf;l adfl;sadjflakkf.
+  akdfl;adjsfladjflsadfjlsdfj; a;rwoerjwlerwer. aoidjfoejflwkejfoidjfladjf;laekjoweiodijal;skjf;alkf.</p>
+</div>
+
+  <div class="bgimg-4">
+    <br> <br> <br> <br>
+    <h1>Donate Now.</h1>
+  </div>
+
+<div class="bgimg-5">
+    <p>Resources</p>
+  </div>
+
+
+  <div class="bgimg-6">
+    <p>Who are we?</p>
+  </div>
+
+
+<div class="bgimg-7">
+    <span class="border">COOL!</span>
+  </div>
+
 
 </body>
 </html>
-
