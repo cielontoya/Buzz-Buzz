@@ -116,7 +116,7 @@ h3{
 .psource{
   text-align: center;
   font-size: 100px;
-  color: black;
+  color: #FFC700;
 }
 
 /*bio*/
@@ -146,6 +146,45 @@ a:hover, a:active{
   font-size: 30px;
 }
 
+/*biowidgets*/
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFC700;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: 'Raleway';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 </style>
 
 </head>
@@ -155,7 +194,7 @@ a:hover, a:active{
 <div class="bgimg-1">
   <br><br><br><br><br><br><br><br><br>
   <h1> buzz buzz. </h1>
-  <p style = "font-size: 50px; text-align: center;"> a save the bees initiative </p>
+  <p style = "font-size: 50px; text-align: center;"> a save the <span style = "color: #FFC700;">bees</span> initiative </p>
 </div>
 
 <div class="bgimg-2">
@@ -200,17 +239,45 @@ a:hover, a:active{
 
   <div class="bgimg-6">
     <br> <br>
+    <p class= "psub"> a <span style = "color: #FFC700">girls who code</span> final project </p>
     <p class= "pwe">Who Are We?</p>
-    <p class= "psub"> a girls who code final project </p>
+
+    <div class="container">
+  <img src="https://i.ytimg.com/vi/X9Bivt329y0/maxresdefault.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">CIELO MONTOYA <br/> <br/>I am an upcoming senior at San Leandro High School. I do Ballet Folklorico and would love to own PUGS during my lifetime. </div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="http://static.buzznet.com/uploads/2016/10/Beyonce-as-a-queen-bee-1475856403-373x560.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">ROSHINI SOLANO <br/> <br/>I am going to be a Senior at San Leandro High School. I want a lot of dogs when I grow up. Also I really, really, really like makeup and food.</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="http://vignette2.wikia.nocookie.net/dreamworks/images/f/f2/Bee-movie-disneyscreencaps_com-1710.jpg/revision/latest?cb=20130430181903" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">AUDREY SHI <br/> <br/>I am going to be a senior at Dublin High School. I a love to play video games, like OverWatch and BioShock. I love to write and draw; I’m really into calligraphy.</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="https://vignette2.wikia.nocookie.net/meme-hell/images/5/56/Bee.png/revision/latest/scale-to-width-down/345?cb=20151123175502" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">JASMIN ELENES <br/> <br/> I am about to be a rising junior at Arroyo High School in the fall of 2017. I also love listening to music and going to concerts.</div>
+  </div>
+</div>
   </div>
 
 
 <div class="bgimg-7">
   <br> <br>
   <center>
-    <p style = "text-align: center; font-size: 100px;">Mini Game </p>
-    <a href="https://cielontoya.github.io/Buzz-Buzz/beesgame.html" style = "align: middle; font-size: 50px" target = "_blank">SAVE THE BEES</a> <br>
-    <p style = "font-size: 30px"> Play our mini game and try to save the bees! </p>
+    <p style = "text-align: center; font-size: 100px; color: #FFC700;">Mini Game </p>
+    <a href="https://cielontoya.github.io/Buzz-Buzz/beesgame.html" style = "align: middle; font-size: 50px;" target = "_blank">SAVE THE BEES</a> <br>
+    <p style = "font-size: 30px; color: #404040"> Play our mini game and try to save the bees! </p>
   </center>
   </div>
 
