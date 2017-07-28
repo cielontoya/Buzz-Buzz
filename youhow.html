@@ -11,36 +11,57 @@
     margin: 0;
     color: #777;
     font-family: 'Raleway';
+    background: url("honeycomb.png")
   }
 
-  .bg-9 {
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .6;
+  .button {
+      background-color: #FFC700; /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 8px;
   }
 
-  .bgimg-9 {
-      background-image: url("combhoney.jpg");
-      min-height: 885px;
-      min-width: 652px;
+  .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #FFC700;
   }
 
+  a:link, a:visited{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+  }
+
+  a:hover, a:active{
+    text-decoration: none;
+    background-color: transparent;
+    color: #FFC700;
+    font-size: 16px;
+  }
 </style>
 </head>
 <body>
   <div class="bg-9">
-        <br> <br>
         <center>
           <p style = "text-align: center; font-size: 100px; color: #FFC700;">HOW TO SAVE THE BEES </p>
-          <a href="https://cielontoya.github.io/Buzz-Buzz.html" style = "align: middle; font-size: 50px;" target = "_blank"> SAVE THE BEES</a> <br>
           <p style = "font-size: 30px; color: #404040"> Start a Flowery Garden </p>
           <p style = "font-size: 30px; color: #404040"> Plant Native Flower Species </p>
           <p style = "font-size: 30px; color: #404040"> Don't use Chemical Pesticides and Herbicides that much (or at all) </p>
           <p style = "font-size: 30px; color: #404040"> DONT BE AFRAID OF BEES </p>
           <p style = "font-size: 30px; color: #404040"> Buy Local Organic Raw Honey </p>
+
+          <button class="button button1"><a href="/Buzz-Buzz/savethebees.html" style = "text-decoration: none;">home</button></a>
         </center>
         </div>
 </body>
