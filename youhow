@@ -1,1 +1,45 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<style>
+  /*css goes in here*/
+  body, html {
+    height: 100%;
+    margin: 0;
+    color: #777;
+    font-family: 'Raleway';
+  }
+
+  .bg-9 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+  }
+
+  .bgimg-9 {
+      background-image: url("combhoney.jpg");
+      min-height: 885px;
+      min-width: 652px;
+  }
+
+</style>
+</head>
+<body>
+  <div class="bg-9">
+        <br> <br>
+        <center>
+          <p style = "text-align: center; font-size: 100px; color: #FFC700;">HOW TO SAVE THE BEES </p>
+          <p style = "font-size: 30px; color: #404040"> Start a Flowery Garden </p>
+          <p style = "font-size: 30px; color: #404040"> Plant Native Flower Species </p>
+          <p style = "font-size: 30px; color: #404040"> Don't use Chemical Pesticides and Herbicides that much (or at all) </p>
+          <p style = "font-size: 30px; color: #404040"> DONT BE AFRAID OF BEES </p>
+          <p style = "font-size: 30px; color: #404040"> Buy Local Organic Raw Honey </p>
+        </center>
+        </div>
+</body>
