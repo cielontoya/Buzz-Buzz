@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <title> SAVE THE BEES </title>
+  <form>
+<input class="MyButton" type="button" value="Navigation" onclick="window.location.href='https://cielontoya.github.io/Buzz-Buzz/savethebees.html#navi'"/>
+</form>
 <head>
   <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -256,7 +259,23 @@ a#don:hover {
     color: white;
     text-decoration-color: white;
   }
-
+/*navi button*/
+ input.MyButton {
+left: 30px;
+bottom: 20px;
+width: 95px;
+padding: 20px;
+cursor: pointer;
+font-size: 12px;
+background: white;
+color: black;
+border: none;
+border-radius: 10px;
+-moz-box-shadow:: 6px 6px 5px #999;
+-webkit-box-shadow:: 6px 6px 5px #999;
+z-index: 99;
+}
+  
 </style>
 
 </head>
@@ -371,6 +390,7 @@ a#don:hover {
   </div>
 </a>
 
+    <a id = "navi">
   <div class="bgimg-8">
     <br> <br>
     <p class = "psource" style = "color: black; line-height: .6"> Navigation </p>
@@ -382,6 +402,7 @@ a#don:hover {
       <span style = "color:white"> 7 </span> <span style = "color:black"> <a href="#game">Mini Game </a></span> <br>
       <span style = "color:white"> 8 </span> <span style = "color:black"> <a href="https://cielontoya.github.io/Buzz-Buzz/youhow.html" target="_blank">What Can You Do? </a></span> <br>
     </div>
+    </a>
    
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
