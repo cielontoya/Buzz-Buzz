@@ -401,16 +401,13 @@ z-index: 99;
   <center>
     <p style = "text-align: center; font-size: 100px; color: #FFC700;">Mini Game </p>
       <a id = "game">
-  <div class="bgimg-7">
-    <br> <br>
-
-      <p style = "text-align: center; font-size: 100px; color: #FFC700;" id="TREASON">Mini Game </p>
-  </div>
-
+  
+</div>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <center><input type="button" class="button" id="Button" value="Start Game" onclick= "startGame()"></center>
   <center> <canvas id="Canvas" width="600" height="355"></canvas>  </center>
+       
   <style>
   canvas {
       border:1px solid #d3d3d3;
@@ -448,8 +445,6 @@ z-index: 99;
 
   var myGameArea = {
       canvas : document.getElementById("Canvas"),
-      button : document.getElementById("Button"),
-      treason : document.getElementById("TREASON"),
       start : function() {
           this.context = this.canvas.getContext("2d");
           this.frameNo = 0;
@@ -583,7 +578,9 @@ z-index: 99;
   </div>
 
 </body>
-<footer> <p>DON'T HIT THE OBSTACLES! KEEP THE BEES ALIVE! BUZZ BUZZ.</p> </footer>
+
+    
+<!--<footer> <p>DON'T HIT THE OBSTACLES! KEEP THE BEES ALIVE! BUZZ BUZZ.</p> </footer> -->
 
     <a id = "navi">
   <div class="bgimg-8">
