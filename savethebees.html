@@ -165,6 +165,12 @@ a:link, a:visited{
   font-size: 30px;
 }
 
+a:hover, a:active{
+  text-decoration: none;
+  background-color: transparent;
+  color: #FFC700;
+  font-size: 30px;
+}
 
 /*biowidgets*/
 .all {
@@ -185,14 +191,15 @@ a:link, a:visited{
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 120px;
+  right: -20px;
   height: 100%;
   width: 60%;
   opacity: 0;
   transition: .5s ease;
   background-color: #FFC700;
 }
+
 .container:hover .overlay {
   opacity: 1;
 }
@@ -558,7 +565,6 @@ font-size: 16px;
   </div>
 
 </a>
-
 
 
 <!--<footer> <p>DON'T HIT THE OBSTACLES! KEEP THE BEES ALIVE! BUZZ BUZZ.</p> </footer> -->
