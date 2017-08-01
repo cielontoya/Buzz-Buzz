@@ -383,7 +383,11 @@ font-size: 16px;
       <a id = "game">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <center><input type="button" class="button" id="Button" value="Start Game" onclick= "startGame()"></center>
+
+  <center><input type="button" class="button" id="Button" value="Restart" onclick= "startGame2()"></center>
+
   <center> <canvas id="Canvas" width="600" height="355"></canvas>  </center>
 
   <style>
@@ -407,8 +411,8 @@ font-size: 16px;
   </style>
 
 
-  <body>
-  <script>
+
+<script>
 
   var myGamePiece;
   var myObstacles = [];
@@ -418,6 +422,11 @@ font-size: 16px;
       myGamePiece = new component(30, 30, "https://openclipart.org/image/2400px/svg_to_png/215877/Cartoon-Bee.png", 10, 	120, "image");
       myScore = new component("30px", "Consolas", "black", 280, 40, "text");
       myGameArea.start();
+
+  }
+
+  function startGame2() {
+      location.reload();
 
   }
 
@@ -554,8 +563,6 @@ font-size: 16px;
     <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
     <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
   </div>
-</div>
-</body>
 
 
 <!--<footer> <p>DON'T HIT THE OBSTACLES! KEEP THE BEES ALIVE! BUZZ BUZZ.</p> </footer> -->
